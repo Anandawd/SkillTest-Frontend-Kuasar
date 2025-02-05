@@ -42,9 +42,9 @@ cd kuasar-be
 npx api install "@nim/v1.0#1c2s2wlyzzt309"
 ```
 During the installation, follow these steps:
-- What language would you like to generate an SDK for? » JavaScript
-- How are your project imports and exports structured? » CommonJS
-- OK to proceed with package installation? » typing "Y"
+- What language would you like to generate an SDK for? » **JavaScript**
+- How are your project imports and exports structured? » **CommonJS**
+- OK to proceed with package installation? » typing **"Y"**
 - Wait until the installation is complete.
 3. Create a .env file in the kuasarai-be directory and add the necessary environment variables, including your NVIDIA API key. You can generate an NVIDIA API key through the following link: 
 NVIDIA API Key Generation or use your existing API key.
@@ -74,7 +74,7 @@ npm run dev
 ```
 
 # Technical Decisions and Architecture
-## Frontend: The frontend is built using React with Vite and TypeScript, providing a modern and efficient development experience.
-## Backend: The backend is developed using Express.js, serving as an API to handle requests from the frontend.
-## Data Fetching: GraphQL is used to fetch country data, allowing for efficient and flexible queries.
-## AI Integration: The application integrates with the NVIDIA AI model meta-llama-3_1-405b to power the chatbot features, enabling intelligent responses and recommendations.
+- **Frontend:** The frontend is built using React with Vite and TypeScript, providing a modern and efficient development experience.
+- **Backend:** The backend is developed using Express.js, serving as an API to handle requests from the frontend.
+- **Data Fetching:** GraphQL is used to fetch country data, allowing for efficient and flexible queries.
+- **AI Integration:** The application integrates with the NVIDIA AI model meta-llama-3_1-405b to power the chatbot features, enabling intelligent responses and recommendations.
