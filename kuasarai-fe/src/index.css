@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 23rem;
+}
+
+.BrandBlur {
+  position: relative;
+  overflow: hidden;
+}
+
+.BrandBlur::before,
+.BrandBlur::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  pointer-events: none;
+}
+
+.BrandBlur::before {
+  left: 0;
+  z-index: 10;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.BrandBlur::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.CharBlur::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  pointer-events: none;
+}
+
+.CharBlur::after {
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.BirdBlur::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  pointer-events: none;
+}
+
+.BirdBlur::after {
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
